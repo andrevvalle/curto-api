@@ -1,0 +1,12 @@
+{
+  "name": "curto-tabuleiro-api",
+  "description": "RESTful API to Curto Tabuleiro",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "mongoose": "^3.8.15"
+  }
+}
