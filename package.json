@@ -3,10 +3,14 @@
   "description": "RESTful API to Curto Tabuleiro",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "make test"
   },
   "dependencies": {
     "express": "~4.0.0",
     "mongoose": "^3.8.15"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }
