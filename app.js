@@ -3,32 +3,23 @@
 // BASE SETUP
 // ==============================================
 
-var express = require('express'),
-	app     = express(),
-	port    = process.env.PORT || 8080;
+var express  = require('express'),
+	mongoose = require('mongoose'),
+	app      = express(),
+	env      = require('./config/environment'),
+	routes   = require('./routes'),
+	port     = process.env.PORT || 5000;
+
+mongoose.connect(env.config.mongo);
 
 // ROUTES
 // ==============================================
 
-var router = express.Router();
+app.use('/products', routes.products);
 
-router.get('/', function(req, res) {
-	res.send('Curto Tabuleiro API');
-});
+app.use('/dailyConsumption', routes.daily);
 
-router.get('/dailyConsumption', function(req, res) {
-	res.send({});
-});
-
-router.put('/dailyConsumption', function(req, res) {
-	res.send('PUT /dailyConsumption');
-});
-
-router.get('/products', function(req, res) {
-	res.send({});
-});
-
-app.use('/', router);
+app.use('*', routes.notFound);
 
 // START THE SERVER
 // ==============================================
