@@ -1,8 +1,12 @@
-# Curto Tabuleiro API
+# Curto API
 
-RESTful API to [Curto Tabuleiro](https://github.com/felippenardi/curto-tabuleiro), a board-game like self payment app for Curto Café
+API link: [curto-api.herokuapp.com](http://curto-api.herokuapp.com/)
 
-API link: [curto-tabuleiro-api.herokuapp.com](http://curto-tabuleiro-api.herokuapp.com/)
+> RESTful API to Curto Café
+
+Being used by:
+
+- [Curto Tabuleiro](https://github.com/felippenardi/curto-tabuleiro), a board-game like self payment app for Curto Café
 
 ## Routes
 
@@ -14,14 +18,26 @@ API link: [curto-tabuleiro-api.herokuapp.com](http://curto-tabuleiro-api.herokua
 
 ## Run API locally
 
-1. Install all project dependencies:
+1. Install [MongoDB](http://www.mongodb.org/) and [NodeJS](http://nodejs.org/download/), if you don't have them already.
+
+2. Install all project dependencies:
 
 ```sh
   $ npm install
   ```
 
-2. Start app server (http://localhost:8080/)
+3. Start **MongoDB**, for run without specifying paths:
+
+	mongod
+
+4. Start app (http://localhost:5000/)
 
 ```sh
   $ node app
+  ```
+
+## Run Tests
+
+```sh
+  $ npm test
   ```
