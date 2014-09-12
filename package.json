@@ -1,5 +1,5 @@
 {
-  "name": "curto-tabuleiro-api",
+  "name": "curto-api",
   "description": "RESTful API to Curto Tabuleiro",
   "main": "app.js",
   "scripts": {
