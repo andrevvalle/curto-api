@@ -4,7 +4,7 @@ var express = require('express'),
 var Product = require('../models/product');
 
 router.get('/', function(req, res) {
-  	Product.find().exec(function(err, result){
+  	Product.find({}, {'_id': 0}).exec(function(err, result){
         res.json(result);
     });
 });
