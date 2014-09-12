@@ -36,7 +36,7 @@ Config.development = {
  */
 Config.production = {
     name: "production",
-    mongo: "mongodb://heroku:ca8943e048b90f97c1fb1e18efa28421@kahana.mongohq.com:10038/app29333960",
+    mongo: "mongodb://curtocafe:bieltransante@kahana.mongohq.com:10038/app29333960",
     defaultUrl: "http://localhost",
     serverPort: 3000,
     logNamespace: "production",
