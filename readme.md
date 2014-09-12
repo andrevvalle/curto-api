@@ -28,7 +28,9 @@ Being used by:
 
 3. Start **MongoDB**, for run without specifying paths:
 
-	mongod
+```sh
+  $ mongod
+  ```
 
 4. Start app (http://localhost:5000/)
 
